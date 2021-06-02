@@ -107,7 +107,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl.legacy \
     android.hardware.gnss@1.0-service.legacy \
-    gps.msm8974
+    gps.msm8974 \
+    gps.conf \
+    libloc_core \
+    libgnss \
+    liblocation_api \
+    libgps.utils \
+    libbatching \
+    libgeofencing
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
