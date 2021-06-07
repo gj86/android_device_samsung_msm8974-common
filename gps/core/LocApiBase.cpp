@@ -265,7 +265,7 @@ void LocApiBase::reportSv(HaxxSvStatus &svStatus,
              " mask: %x/%x/%x\n      sv: prn         snr       elevation      azimuth",
              svStatus.num_svs, svStatus.ephemeris_mask,
              svStatus.almanac_mask, svStatus.gps_used_in_fix_mask,
-             svStatus.glo_used_in_fix_mask, svStatus.bds_used_in_fix_mask);
+             svStatus.glo_used_in_fix_mask, (unsigned int)svStatus.bds_used_in_fix_mask);
     for (int i = 0; i < svStatus.num_svs && i < GPS_MAX_SVS; i++) {
         LOC_LOGV("   %d:   %d    %f    %f    %f",
                  i,
